@@ -1,0 +1,44 @@
+<!doctype html>
+<html class="no-js">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="vendor/selectize/css/selectize.bootstrap3.css">
+    <link rel="stylesheet" href="vendor/selectize/css/selectize.css">
+  </head>
+  <body ng-app="mySelectizeApp">
+    <div class="header">
+      <div class="navbar navbar-default" role="navigation">
+        <div class="container">
+          <div class="navbar-header">
+            <a class="navbar-brand" href="#/">mySelectize</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div>
+        <p>Choose the options in the field below:</p>
+        <selectize ng-model="values" options="options.json"></selectize>
+        <p>
+          {{values}}
+        </p>
+      </div>
+    </div>
+
+
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/angular/angular.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.js"></script>
+    <script src="vendor/selectize/js/standalone/selectize.min.js"></script>
+    <script src="scripts/app.js"></script>
+    <script src="scripts/modules/selectize/directives/selectize.js"></script>
+    <script src="scripts/modules/selectize/services/listFactory.js"></script>
+
+</body>
+</html>
