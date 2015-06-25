@@ -37,4 +37,8 @@
   "scripts": {
     "test": "grunt test"
   }
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> origin/master
